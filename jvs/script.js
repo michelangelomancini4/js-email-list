@@ -15,7 +15,11 @@ let result = response.data;
   console.log("Indirizzo email:", result.response); 
 
    // stampo in pagina le mail
-  outputEl.innerHTML += `${"Indirizzo email:"} ${ result.response}`;
+  outputEl.innerHTML += `
+  <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+   ${"Indirizzo email:"} ${ result.response } 
+   </div>
+`;
 })
  
 // in caso di errore stampo in console l'errore
